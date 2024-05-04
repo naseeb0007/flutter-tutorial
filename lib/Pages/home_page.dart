@@ -8,12 +8,16 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue, // Change the color here
-        title: Text('Flutter Demo'),
+        backgroundColor: Colors.red, // Change the color here
+        title: Text('Naseeb Khan'),
       ),
       body: Center(
         child: Container(
-          child: Text("Welcome to $days days of Flutter by $name"),
+          child: Text(
+            "Welcome to $days days of Flutter by $name",
+            style: TextStyle(color: Colors.red), // Set text color to white
+          ),
+          color: Colors.white,
         ),
       ),
       drawer: Drawer(),
